@@ -115,4 +115,10 @@ html {
   box-sizing: border-box;
 }
 
+@media (min-width: 375px) and (max-width: 750px) {
+  .container {
+    flex-wrap: wrap;
+  }
+}
+
 </style>
