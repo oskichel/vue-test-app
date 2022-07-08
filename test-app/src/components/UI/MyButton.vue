@@ -14,6 +14,7 @@ export default {
 .button {
   width: 284px;
   height: 36px;
+  margin-top: 8px;
   background: #7BAE73;;
   border-radius: 10px;
   outline: none;

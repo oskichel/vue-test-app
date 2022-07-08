@@ -1,11 +1,13 @@
 <template>
-  <div class="items-container">
+  <div class="items-container" v-if="items.length > 0">
     <product-item class="item" 
-      v-for="(item, id) in items" 
+      v-for="(item) in items" 
       :item="item"
-      :key="id"
+      :key="item.id"
+      @remove="$emit('remove', item)"
     />
   </div>
+  <h2 class="else" v-else>Список товаров пуст</h2>
 </template>
 
 <script>
@@ -41,6 +43,17 @@ export default {
   display: flex;
   flex-wrap: wrap;
   gap: 16px 16px;
+}
+
+.else {
+  margin: auto;
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 35px;
+  text-align: center;
+  color: #3F3F3F;
 }
 
 </style>

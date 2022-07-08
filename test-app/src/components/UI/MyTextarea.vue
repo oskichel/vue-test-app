@@ -23,8 +23,8 @@ export default {
 <style scoped>
 .input {
   width: 284px;
-  min-height: 36px;
-  margin-bottom: 16px;
+  height: 108px;
+  margin-bottom: 10px;
   padding: 10px 16px 11px;
   background: #FFFEFB;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);

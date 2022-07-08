@@ -91,10 +91,14 @@ export default {
   line-height: 13px;
   letter-spacing: -0.02em;
   color: #49485E;
+  box-sizing: border-box;
 }
 
 .star {
   color: #FF8484;
+  padding-bottom: 4px;
+  line-height: 13px;
+  box-sizing: border-box;
 }
 
 .body {
